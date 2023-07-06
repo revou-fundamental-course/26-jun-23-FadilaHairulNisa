@@ -1,13 +1,134 @@
-<!-- memastikan file yang di buat itu tipe html 5 -->
 <!DOCTYPE html>
-<html>
-    <!-- Judul Besar -->
-    <head>
-        <title>Website Nya</title>
-    </head>
-    
-    <body>
-        <!-- Header Untuk Judul Website Di Content -->
-        <h1>Hello</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Groceries</title>
+    <link rel="stylesheet" href="/style.css ">
+    <!-- font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <section id="headerNavigation">
+            <img src="/Asssets/img/logo.png" id="logo">
+            <nav id="navigation">
+                <button>Home</button>
+                <button>Our Package</button>
+                <button>Call Us</button>
+            </nav>
+        </section>
+        <section id="headerTitle">
+            <h1 id="titleJudul">Top Rated E-Groceries Shop In Indonesia</h1>
+            <h4 id="subtitle">Ever day with Best Ingredients</h4>
+        </section>
+    </header>
+    <Main>
+        <section id="ourPackage">
+            <article id="op-articel">
+                <img class="img-header" src="/Asssets/img/asset1.jpg">
+                <h4 id="subtitle">"Setiap Hari Beli Sayur buah yang fresh disini"</h4>
+                <div class="user">
+                    <img src="/Asssets/img/user.png"><h5>FLorance Hughes</h5>
+                </div>
+                <h5 id="titleHead">Use this space to provide users with more information about
+                    your offer. Consider ot a follow-up to yout headline and explain
+                    the benefits of yout service or product
+                </h5>
+                <div class="op-promo">
+                    <img src="/Asssets/img/num-1.svg"><p>Diskon luar biasa hingga 50% untuk produk kitchen</p> 
+                    <img src="/Asssets/img/num-2.svg"><p>Diskon 30% berbagai produk jenis sayuran dan buah fresh</p>
+                    <img src="/Asssets/img/num-3.svg"><p>Diskon 50% untuk Para Ibu Rumah Tangga dan gratis ongkir</p>
+                </div>
+            </article>
+            <section id="contactUs">
+                <h3 class="titleSub">Contact Us</h3>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                <form class="formContact" name="contact-form" onsubmit="return validateForm()">
+                    <label for="full-name">Your name:</label><br>
+                    <input type="text" name="full-name" id="full-name" placeholder="First and Last name"><br>
+                    <label for="email">Email Addres:</label> <br>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com"><br>
+                    <label for="phone-contact">Phone Number:</label><br>
+                    <input type="text" name="phone-contact" id="phone-contact"><br>
+                    <label for="messages">Pesan:</label>
+                    <textarea name="messages" id="messages" cols="30" rows="6"></textarea>
+                    <input type="submit" value="SEND">
+                </form>
+            </section>
+        </section>
+        
+        <section id="header-ourPackage">
+            <h1 id="title-heading">OUR PACKAGE</h1>
+        </section>
+        <section id="slide-banner">
+            <div class="slideshow">
+                <div class="img-slideshow">
+                    <div class="numbertext">1 / 6</div>
+                    <img
+                    src="/Asssets/img/banner1.jpg"
+                    onclick="currentSlide(1)"
+                    />
+                </div>
+                <div class="img-slideshow">
+                    <div class="numbertext">2 / 6</div>
+                    <img
+                    src="/Asssets/img/banner2.jpg"
+                    onclick="currentSlide(2)"
+                    />
+                </div>
+                <div class="img-slideshow">
+                    <div class="numbertext">3 / 6</div>
+                    <img
+                    src="/Asssets/img/banner 3.jpg"
+                    onclick="currentSlide(3)"
+                    />    
+                </div>
+                <div class="img-slideshow">
+                    <div class="numbertext">4 / 6</div>
+                    <img 
+                    src="/Asssets/img/banner4.jpg"
+                    onclick="currentSlide(4)"
+                    />
+                </div>
+                <div class="img-slideshow">
+                    <div class="numbertext">5 / 6</div>
+                    <img 
+                    src="/Asssets/img/banner5.jpg"
+                    onclick="currentSlide(5)"
+                    />
+                </div>
+                <div class="img-slideshow">
+                    <div class="numbertext">6 / 6</div>
+                    <img 
+                    class="img-slideshow"
+                    src="/Asssets/img/banner6.jpg"
+                    onclick="currentSlide(6)"
+                    />
+                </div>
+
+            </div>
+            <button class="prev" onclick="plusDivs(-1)">Previsious</button>
+            <button class="next" onclick="plusDivs(1)">next</button>
+        </section>
+
+        <section id="callUS">
+            <h1>Good Food Good Energy</h1>
+            <h3>We hope this message finds you in great health and high spirits.<br>
+                We are thrilled to introduce you to our innovative Fruit and Vegetable E-Grocery,<br>
+                a one-stop online destination for all your fresh produce needs.
+            </h3>
+            <button class="btncall">Call To Action</button>
+
+        </section>
+    </Main>
+
+    <footer>
+        <section id="footer">
+            <h2>Revou</h2>
+            <h5>Terms of Service Privacy Policy @2019 || Revou Saranghae</h5>
+        </section>
+    </footer>
+    <script src="/script.js"></script>
+</body>
 </html>

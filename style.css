@@ -1,0 +1,310 @@
+body {
+    font-family: "Open Sans", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* MARK: Header Section */
+#headerNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px; 
+    background-color: #059862;
+    padding: 16px 24px;
+}
+
+#logo {
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}
+
+#navigation {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    gap: 1px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px 16px;
+}
+
+#navigation button {
+    text-decoration: none;
+    text-align: center;
+    color: #059862;
+    height: 32px;
+    display: block;
+    padding: 0 20px;
+}
+
+#headerTitle {
+    text-align: center;
+    padding-top: 24px;
+}
+
+#titleJudul {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    color: #3b4754;
+    
+}
+
+#subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color:#798da3 ;
+}
+
+/* MARK: Our Package Section */
+
+#ourPackage {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 24px;
+    height: 120vh;
+}
+
+#op-articel {
+    flex-basis: 60%;
+    flex-grow: 0;
+    margin-left: 14px;
+    padding-left: 24px;
+}
+
+.img-header {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2px;
+}
+
+#op-articel #subtitle {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px;
+    color: #798da3;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 4px;
+}
+.user img {
+    height: 34px;
+    padding: 8px;
+
+}
+
+#op-articel #titleHead {
+    font-size: 13px;
+    line-height: 20px;
+    color: #3b4754;
+}
+
+.op-promo {
+    display: flex;
+}
+
+.op-promo img {
+    font-size: 12px;
+}
+
+.op-promo p {
+    padding-right: 8px;
+    margin: 6px;
+}
+
+/* FORM Cotanct Us */
+#contactUs {
+    background-color:#d8efe7;
+    height: 700px;
+    flex-basis: 40%;
+    flex-grow: 0;
+    margin: 0 42px 0 42px;
+    border-radius: 2px;
+}
+
+.titleSub {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 40px 28px 14px 28px;
+    color: #3b4754;
+}
+
+#contactUs p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    margin: 16px 28px;
+    color: #798da3;
+}
+
+#contactUs .formContact {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 12px;
+    margin: 46px 28px;
+    color: #3b4754;
+}
+input[type=text], [type=email], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #bfebdb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #29323D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* MARK: Our Package */
+
+#header-ourPackage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+    background-color: #EDF0F4;
+}
+
+#title-heading {
+    font-size: 28px;
+    line-height: 34px;
+    color: #29323d;
+}
+
+/* Slide Banner */
+
+#slide-banner {
+    height: 80vh;
+    padding-top: 30px;
+    border-bottom: 2px solid rgb(220, 218, 218);
+    padding: 16px 24px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 28px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-slideshow img {
+    object-fit: contain;
+    width: max-content;
+    height: max-content;
+}
+
+#slide-banner button{
+    display: inline-flex;
+    margin-top: 16px;
+    background-color: #29323D;
+    color: white;
+    justify-self: center;
+}
+
+/* MARK: CALL US */
+
+#callUS {
+    height: 40vh;
+    text-align: center;
+    border-bottom: 2px solid rgb(220, 218, 218);
+    flex-direction: column;
+    box-sizing: content-box;
+
+}
+
+#callUS h1{
+    font-size: 32px;
+    color: #3b4754;
+}
+
+#callUS h3 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 26px;
+    padding-top: 10px;
+    color: #b6b6b6;
+}
+
+.btncall {
+    background-color: #29323D;
+    font-size: 14px;
+    color: white;
+    padding: 20px;
+    width: 35%;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+/* MARK: FOOTER */
+
+#footer {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #059862;
+}
+#footer h2 {
+    font-family: -apple-system;
+    font-size: 32px;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+#footer h5 {
+    font-size: 16px;
+    color: #d2d2d2;
+    text-align: center;
+    font-weight: lighter;
+}
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+    #headerNavigation {
+        flex-direction: column;
+    }
+    #navigation {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -24px;
+    }
+
+    #headerTitle {
+        padding-top: 120px;
+    }
+}
